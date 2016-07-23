@@ -1,0 +1,16 @@
+{
+  "name": "sweetalert2-webpack-demo",
+  "version": "1.0.0",
+  "repository": "https://github.com/limonte/sweetalert2-webpack.git",
+  "description": "Demo of using SweetAlert2 with webpack",
+  "author": "Limon Monte",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "*",
+    "css-loader": "*",
+    "style-loader": "*"
+  },
+  "dependencies": {
+    "sweetalert2": "^4.0.14"
+  }
+}
