@@ -16,3 +16,7 @@ webpack index.js bundle.js
 ---
 
 Live result: https://limonte.github.io/sweetalert2-webpack-demo/
+
+---
+
+Read more about webpack usage: https://github.com/petehunt/webpack-howto
