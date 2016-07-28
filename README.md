@@ -1,4 +1,4 @@
-# Demonstration of using SweetAlert2 with [webpack](https://webpack.github.io/)
+# Demonstration of using [SweetAlert2](https://github.com/limonte/sweetalert2) with [webpack](https://webpack.github.io/)
 
 #### index.js:
 ```js
