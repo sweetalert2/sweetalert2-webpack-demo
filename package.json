@@ -11,6 +11,6 @@
     "style-loader": "*"
   },
   "dependencies": {
-    "sweetalert2": "^4.0.14"
+    "sweetalert2": "latest"
   }
 }
