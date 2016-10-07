@@ -4,6 +4,9 @@
   "repository": "https://github.com/limonte/sweetalert2-webpack.git",
   "description": "Demo of using SweetAlert2 with webpack",
   "author": "Limon Monte",
+  "contributors": [
+    "Jon Crenshaw <jdcrensh@gmail.com> (https://www.linkedin.com/in/jdcrensh)"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "./node_modules/.bin/webpack"
