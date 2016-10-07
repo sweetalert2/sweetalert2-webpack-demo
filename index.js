@@ -1,4 +1,4 @@
-var swal = require('sweetalert2');
-require('sweetalert2/dist/sweetalert2.css');
+import swal from 'sweetalert2';
+import './styles.scss';
 
 swal('Hi from webpack!');
