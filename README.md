@@ -2,15 +2,14 @@
 
 #### index.js:
 ```js
-var swal = require('sweetalert2');
-require('sweetalert2/dist/sweetalert2.css');
+import swal from 'sweetalert2';
 
 swal('Hi from webpack!');
 ```
 
 #### Compile:
 ```sh
-webpack index.js bundle.js
+npm run build
 ```
 
 ---
