@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "repository": "https://github.com/limonte/sweetalert2-webpack.git",
   "description": "Demo of using SweetAlert2 with webpack",
-  "author": "Limon Monte",
+  "author": "Limon Monte <limon.monte@gmail.com> (https://limonte.github.io)",
   "contributors": [
     "Jon Crenshaw <jdcrensh@gmail.com> (https://www.linkedin.com/in/jdcrensh)"
   ],
