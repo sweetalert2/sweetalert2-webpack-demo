@@ -10,7 +10,7 @@ swal('Hi from webpack!')
 
 #### Compile:
 ```sh
-$ npm run build
+$ webpack
 ```
 
 ---
