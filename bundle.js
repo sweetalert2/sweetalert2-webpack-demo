@@ -61,7 +61,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,10 +71,10 @@
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(3);
+var content = __webpack_require__(2);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(5)(content, {});
+var update = __webpack_require__(4)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -1793,24 +1793,7 @@ if (window.Sweetalert2) window.sweetAlert = window.swal = window.Sweetalert2;
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
-"use strict";
-'use strict';
-
-var _sweetalert = __webpack_require__(1);
-
-var _sweetalert2 = _interopRequireDefault(_sweetalert);
-
-__webpack_require__(0);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-(0, _sweetalert2.default)('Hi from webpack!').catch(_sweetalert2.default.noop);
-
-/***/ },
-/* 3 */
-/***/ function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(3)();
 // imports
 
 
@@ -1821,7 +1804,7 @@ exports.push([module.i, "body.swal2-in {\n  overflow-y: hidden; }\n\nbody.swal2-
 
 
 /***/ },
-/* 4 */
+/* 3 */
 /***/ function(module, exports) {
 
 /*
@@ -1877,7 +1860,7 @@ module.exports = function() {
 
 
 /***/ },
-/* 5 */
+/* 4 */
 /***/ function(module, exports) {
 
 /*
@@ -2127,6 +2110,23 @@ function updateLink(linkElement, obj) {
 		URL.revokeObjectURL(oldSrc);
 }
 
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+'use strict';
+
+var _sweetalert = __webpack_require__(1);
+
+var _sweetalert2 = _interopRequireDefault(_sweetalert);
+
+__webpack_require__(0);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _sweetalert2.default)('Hi from webpack!').catch(_sweetalert2.default.noop);
 
 /***/ }
 /******/ ]);

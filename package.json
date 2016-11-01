@@ -8,9 +8,6 @@
     "Jon Crenshaw <jdcrensh@gmail.com> (https://www.linkedin.com/in/jdcrensh)"
   ],
   "license": "MIT",
-  "scripts": {
-    "build": "./node_modules/.bin/webpack"
-  },
   "devDependencies": {
     "babel": "latest",
     "babel-core": "latest",
