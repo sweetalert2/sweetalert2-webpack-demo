@@ -14,7 +14,7 @@
     "babel-loader": "latest",
     "babel-preset-es2015": "latest",
     "css-loader": "latest",
-    "node-sass": "^3.10.1",
+    "node-sass": "latest",
     "postcss-loader": "latest",
     "sass-loader": "latest",
     "style-loader": "latest",
