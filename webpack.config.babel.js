@@ -10,12 +10,12 @@ export default {
     loaders: [{
       // Load imported local javascript
       test: /\.js$/,
-      loader: 'babel',
+      loader: 'babel-loader',
       exclude: /node_modules/
     }, {
       // Load imported stylesheets
       test: /\.s?css$/,
-      loaders: ['style', 'css', 'postcss', 'sass']
+      loaders: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
     }]
   }
 }
