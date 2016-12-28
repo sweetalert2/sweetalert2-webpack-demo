@@ -2148,7 +2148,7 @@ __webpack_require__(0);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _sweetalert2.default)('Hi from webpack!').catch(_sweetalert2.default.noop);
+(0, _sweetalert2.default)('Hi from webpack!', 'SweetAlert2 version: ' + _sweetalert2.default.version).catch(_sweetalert2.default.noop);
 
 /***/ }
 /******/ ]);
