@@ -18,7 +18,7 @@
     "postcss-loader": "latest",
     "sass-loader": "latest",
     "style-loader": "latest",
-    "webpack": "^v2.2.0-rc.2"
+    "webpack": "^2.2.0"
   },
   "dependencies": {
     "sweetalert2": "latest"
