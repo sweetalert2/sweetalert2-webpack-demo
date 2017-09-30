@@ -1,5 +1,4 @@
-import swal from 'sweetalert2'
-import './styles.scss'
+import swal from 'sweetalert2/src/sweetalert2.all.js'
 
 swal({
   title: 'Hi from webpack!',

@@ -3,7 +3,7 @@
 
 #### index.js:
 ```js
-import swal from 'sweetalert2'
+import swal from 'sweetalert2/src/sweetalert2.all.js'
 
 swal('Hi from webpack!')
 ```
