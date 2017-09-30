@@ -7,15 +7,13 @@ export default {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [{
-      // Load imported local javascript
-      test: /\.js$/,
-      loader: 'babel-loader',
-      exclude: /node_modules/
-    }, {
-      // Load imported stylesheets
-      test: /\.s?css$/,
-      loaders: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
-    }]
+    loaders: [
+      {
+        // Load imported local javascript
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/
+      }
+    ]
   }
 }
