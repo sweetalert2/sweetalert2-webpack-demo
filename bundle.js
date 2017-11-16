@@ -1916,12 +1916,24 @@ var _sweetalert2 = _interopRequireDefault(_sweetalert);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _sweetalert2.default)({
-  title: 'Hi from webpack!',
-  text: 'SweetAlert2 version: ' + _sweetalert2.default.version,
-  imageUrl: 'https://webpack.js.org/assets/icon-square-big.svg',
-  imageWidth: 300
-}).catch(_sweetalert2.default.noop);
+async function sayHi() {
+  await (0, _sweetalert2.default)({
+    title: 'Hi from webpack!',
+    text: 'SweetAlert2 version: ' + _sweetalert2.default.version,
+    imageUrl: 'https://webpack.js.org/assets/icon-square-big.svg',
+    imageWidth: 300
+  });
+
+  var _ref = await (0, _sweetalert2.default)({ text: 'What is your name?', input: 'text' }),
+      name = _ref.value;
+
+  var _ref2 = await (0, _sweetalert2.default)({ text: 'Where are you from?', input: 'text' }),
+      location = _ref2.value;
+
+  await (0, _sweetalert2.default)('Hi ' + name + ', from ' + location + '!');
+}
+
+sayHi();
 
 /***/ })
 /******/ ]);
