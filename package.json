@@ -21,6 +21,6 @@
     "webpack": "^2.2.0"
   },
   "dependencies": {
-    "sweetalert2": "^6.11.4"
+    "sweetalert2": "^7.0.0"
   }
 }
