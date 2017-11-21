@@ -71,7 +71,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
- * sweetalert2 v7.0.0
+ * sweetalert2 v7.0.3
  * Released under the MIT License.
  */
 (function (global, factory) {
@@ -270,6 +270,9 @@ var _extends = Object.assign || function (target) {
 var popupParams = _extends({}, defaultParams);
 var queue = [];
 
+var previousWindowKeyDown = void 0;
+var windowOnkeydownOverridden = void 0;
+
 /*
  * Check for the existence of Promise
  * Hopefully to avoid many github issues
@@ -316,8 +319,6 @@ var setParameters = function setParameters(params) {
   } else {
     popup = oldPopup || init(params);
   }
-
-  showWarningsForParams(params);
 
   // Set popup width
   var popupWidth = params.width === defaultParams.width && params.toast ? 'auto' : params.width;
@@ -676,13 +677,14 @@ var sweetAlert$1 = function sweetAlert() {
       break;
 
     case 'object':
+      showWarningsForParams(args[0]);
       _extends(params, args[0]);
       params.extraParams = args[0].extraParams;
 
       if (params.input === 'email' && params.inputValidator === null) {
         var inputValidator = function inputValidator(email) {
           return new Promise(function (resolve, reject) {
-            var emailRegex = /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            var emailRegex = /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9-]{2,24}$/;
             if (emailRegex.test(email)) {
               resolve();
             } else {
@@ -1001,8 +1003,12 @@ var sweetAlert$1 = function sweetAlert() {
       var arrowKeys = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Left', 'Right', 'Up', 'Down' // IE11
       ];
 
-      if (e.key === 'Enter') {
+      if (e.key === 'Enter' && !e.isComposing) {
         if (e.target === getInput()) {
+          if (e.target.tagName.toLowerCase() === 'textarea') {
+            return; // do not submit
+          }
+
           sweetAlert.clickConfirm();
           e.preventDefault();
         }
@@ -1046,8 +1052,9 @@ var sweetAlert$1 = function sweetAlert() {
       }
     };
 
-    if (!window.onkeydown || window.onkeydown.toString() !== handleKeyDown.toString()) {
-      states.previousWindowKeyDown = window.onkeydown;
+    if (!windowOnkeydownOverridden) {
+      previousWindowKeyDown = window.onkeydown;
+      windowOnkeydownOverridden = true;
       window.onkeydown = handleKeyDown;
     }
 
@@ -1399,15 +1406,17 @@ sweetAlert$1.queue = function (steps) {
         document.body.setAttribute('data-swal2-queue-step', i);
 
         sweetAlert$1(queue[i]).then(function (result) {
-          queueResult.push(result);
-          step(i + 1, callback);
-        }, function (error$$1) {
-          resetQueue();
-          reject(error$$1);
+          if (result.value !== undefined) {
+            queueResult.push(result.value);
+            step(i + 1, callback);
+          } else {
+            resetQueue();
+            resolve({ dismiss: result.dismiss });
+          }
         });
       } else {
         resetQueue();
-        resolve(queueResult);
+        resolve({ value: queueResult });
       }
     })(0);
   });
@@ -1454,6 +1463,8 @@ sweetAlert$1.close = sweetAlert$1.closePopup = sweetAlert$1.closeModal = sweetAl
 
   if (!isToast()) {
     resetPrevState();
+    window.onkeydown = previousWindowKeyDown;
+    windowOnkeydownOverridden = false;
   }
 
   var removePopupAndResetState = function removePopupAndResetState() {
@@ -1586,13 +1597,12 @@ sweetAlert$1.adaptInputValidator = function (legacyValidator) {
 
 sweetAlert$1.noop = function () {};
 
-sweetAlert$1.version = '7.0.0';
+sweetAlert$1.version = '7.0.3';
 
 sweetAlert$1.default = sweetAlert$1;
 
 // Remember state in cases where opening and handling a modal will fiddle with it.
 var states = {
-  previousWindowKeyDown: null,
   previousActiveElement: null,
   previousBodyPadding: null
 
@@ -1630,34 +1640,24 @@ var states = {
   var checkbox = popup.querySelector('.' + swalClasses.checkbox + ' input');
   var textarea = getChildByClass(popup, swalClasses.textarea);
 
-  input.oninput = function () {
-    sweetAlert$1.resetValidationError();
+  var resetValidationError = function resetValidationError() {
+    sweetAlert$1.isVisible() && sweetAlert$1.resetValidationError();
   };
 
-  file.onchange = function () {
-    sweetAlert$1.resetValidationError();
-  };
+  input.oninput = resetValidationError;
+  file.onchange = resetValidationError;
+  select.onchange = resetValidationError;
+  checkbox.onchange = resetValidationError;
+  textarea.oninput = resetValidationError;
 
   range.oninput = function () {
-    sweetAlert$1.resetValidationError();
+    resetValidationError();
     rangeOutput.value = range.value;
   };
 
   range.onchange = function () {
-    sweetAlert$1.resetValidationError();
+    resetValidationError();
     range.previousSibling.value = range.value;
-  };
-
-  select.onchange = function () {
-    sweetAlert$1.resetValidationError();
-  };
-
-  checkbox.onchange = function () {
-    sweetAlert$1.resetValidationError();
-  };
-
-  textarea.oninput = function () {
-    sweetAlert$1.resetValidationError();
   };
 
   return popup;
@@ -1846,7 +1846,6 @@ var animationEndEvent = function () {
 
 // Reset previous window keydown handler and focued element
 var resetPrevState = function resetPrevState() {
-  window.onkeydown = states.previousWindowKeyDown;
   if (states.previousActiveElement && states.previousActiveElement.focus) {
     var x = window.scrollX;
     var y = window.scrollY;
