@@ -1,4 +1,4 @@
-# Demonstration of using [SweetAlert2](https://github.com/limonte/sweetalert2) with [webpack](https://webpack.github.io/)
+# Demonstration of using [SweetAlert2](https://github.com/sweetalert2/sweetalert2) with [webpack](https://webpack.github.io/)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 #### index.js:
@@ -15,7 +15,7 @@ $ webpack
 
 ---
 
-Live result: https://limonte.github.io/sweetalert2-webpack-demo/
+Live result: https://sweetalert2.github.io/sweetalert2-webpack-demo/
 
 ---
 
