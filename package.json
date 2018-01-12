@@ -10,10 +10,10 @@
   "license": "MIT",
   "devDependencies": {
     "babel": "latest",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
+    "babel-core": "latest",
+    "babel-loader": "latest",
     "babel-preset-es2015": "latest",
-    "webpack": "^2.2.0"
+    "webpack": "latest"
   },
   "dependencies": {
     "sweetalert2": "^7.0.0"
