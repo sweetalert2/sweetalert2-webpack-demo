@@ -10,7 +10,7 @@ async function sayHi() {
 
   const {value: name} = await swal({text: 'What is your name?', input: 'text'})
   const {value: location} = await swal({text: 'Where are you from?', input: 'text'})
-  await swal(`Hi ${name}, from ${location}!`)
+  await swal(`Hi ${name} from ${location}!`)
 }
 
 sayHi()

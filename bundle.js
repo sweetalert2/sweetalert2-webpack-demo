@@ -90,7 +90,7 @@ async function sayHi() {
   var _ref2 = await (0, _sweetalert2.default)({ text: 'Where are you from?', input: 'text' }),
       location = _ref2.value;
 
-  await (0, _sweetalert2.default)('Hi ' + name + ', from ' + location + '!');
+  await (0, _sweetalert2.default)('Hi ' + name + ' from ' + location + '!');
 }
 
 sayHi();
