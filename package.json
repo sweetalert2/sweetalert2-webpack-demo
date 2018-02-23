@@ -13,9 +13,15 @@
     "babel-core": "latest",
     "babel-loader": "latest",
     "babel-preset-es2015": "latest",
+    "jest": "^22.4.2",
+    "jest-image-snapshot": "^2.3.0",
+    "puppeteer": "^1.1.0",
     "webpack": "latest"
   },
   "dependencies": {
     "sweetalert2": "^7.0.0"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
