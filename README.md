@@ -1,5 +1,6 @@
 # Demonstration of using [SweetAlert2](https://github.com/sweetalert2/sweetalert2) with [webpack](https://webpack.github.io/)
-[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
+[![Build Status](https://travis-ci.org/sweetalert2/sweetalert2-webpack-demo.svg?branch=master)](https://travis-ci.org/sweetalert2/sweetalert2-webpack-demo)
 
 #### index.js:
 ```js
