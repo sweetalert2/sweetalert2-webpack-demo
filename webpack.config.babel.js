@@ -7,7 +7,7 @@ export default {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         // Load imported local javascript
         test: /\.js$/,
