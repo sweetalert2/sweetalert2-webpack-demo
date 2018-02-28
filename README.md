@@ -5,7 +5,7 @@
 
 #### index.js:
 ```js
-import swal from 'sweetalert2/dist/sweetalert2.all.min.js'
+import swal from 'sweetalert2'
 
 swal('Hi from webpack!')
 ```
