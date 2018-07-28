@@ -11,6 +11,10 @@ before_script:
 script:
   - yarn test
 
+after_failure:
+  - zip -r diff_output.zip test/__image_snapshots__/__diff_output__
+  - curl --upload-file diff_output.zip https://transfer.sh/diff_output.zip
+
 notifications:
   email:
     on_success: never
