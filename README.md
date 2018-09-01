@@ -10,9 +10,9 @@ import swal from 'sweetalert2'
 swal('Hi from webpack!')
 ```
 
-#### Compile:
+#### Build:
 ```sh
-$ webpack
+$ yarn build
 ```
 
 ---
