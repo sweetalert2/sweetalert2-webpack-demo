@@ -1,4 +1,5 @@
 import swal from 'sweetalert2'
+import '@babel/polyfill'
 
 async function sayHi() {
   await swal({

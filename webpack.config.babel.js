@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   entry: {
     // Main app's entry point
     bundle: `${__dirname}/index.js`
