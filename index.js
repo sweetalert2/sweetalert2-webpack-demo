@@ -1,17 +1,17 @@
-import swal from 'sweetalert2'
+import Swal from 'sweetalert2'
 import '@babel/polyfill'
 
 async function sayHi() {
-  await swal({
+  await Swal.fire({
     title: 'Hi from webpack!',
-    text: `SweetAlert2 version: ${swal.version}`,
+    text: `SweetAlert2 version: ${Swal.version}`,
     imageUrl: 'https://webpack.js.org/assets/icon-square-big.svg',
     imageWidth: 300
   })
 
-  const {value: name} = await swal({text: 'What is your name?', input: 'text'})
-  const {value: location} = await swal({text: 'Where are you from?', input: 'text'})
-  await swal(`Hi ${name} from ${location}!`)
+  const {value: name} = await Swal.fire({text: 'What is your name?', input: 'text'})
+  const {value: location} = await Swal.fire({text: 'Where are you from?', input: 'text'})
+  await Swal.fire(`Hi ${name} from ${location}!`)
 }
 
 sayHi()

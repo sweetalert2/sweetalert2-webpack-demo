@@ -1,7 +1,7 @@
 language: node_js
-dist: trusty
-node_js: 8.11
-sudo: required
+dist: xenial
+node_js: lts/*
+sudo: true
 
 before_script:
   - yarn add global http-server

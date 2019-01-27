@@ -5,9 +5,9 @@
 
 #### index.js:
 ```js
-import swal from 'sweetalert2'
+import Swal from 'sweetalert2'
 
-swal('Hi from webpack!')
+Swal.fire('Hi from webpack!')
 ```
 
 #### Build:
