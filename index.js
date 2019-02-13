@@ -4,9 +4,7 @@ import '@babel/polyfill'
 async function sayHi() {
   await Swal.fire({
     title: 'Hi from webpack!',
-    text: `SweetAlert2 version: ${Swal.version}`,
-    imageUrl: 'https://webpack.js.org/assets/icon-square-big.svg',
-    imageWidth: 300
+    text: `SweetAlert2 version: ${Swal.version}`
   })
 
   const {value: name} = await Swal.fire({text: 'What is your name?', input: 'text'})
