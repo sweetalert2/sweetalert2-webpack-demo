@@ -1,5 +1,5 @@
 import Swal from 'sweetalert2'
-import '@babel/polyfill'
+import 'core-js/stable'
 
 async function sayHi() {
   await Swal.fire({
