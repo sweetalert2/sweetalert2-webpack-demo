@@ -13,7 +13,7 @@ script:
 
 after_failure:
   - zip -r diff_output.zip test/__image_snapshots__/__diff_output__
-  - curl --upload-file diff_output.zip https://transfer.sh/diff_output.zip
+  - curl -F'file=@diff_output.zip' http://0x0.st
 
 notifications:
   email:
