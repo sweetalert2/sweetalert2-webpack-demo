@@ -23,7 +23,7 @@ describe('jest-image-snapshot + puppeteer = <3', () => {
       // headless: false
     })
     page = await browser.newPage()
-    await page.goto('http://127.0.0.1:8080/')
+    await page.goto('http://127.0.0.1:5500/')
   })
 
   it('works nicely and smoothly', async () => {
