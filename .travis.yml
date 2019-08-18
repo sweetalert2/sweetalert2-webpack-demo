@@ -5,7 +5,7 @@ sudo: true
 
 before_script:
   - yarn add global http-server
-  - http-server &
+  - yarn serve &
   - webpack
 
 script:
