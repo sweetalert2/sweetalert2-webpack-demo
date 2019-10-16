@@ -1,0 +1,35 @@
+name: build
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  schedule:
+    - cron:  '0 3 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Install npm dependencies
+      run: yarn install
+
+    - name: Serve
+      run: yarn serve &
+
+    - name: Build
+      run: yarn build
+
+    - name: Run tests
+      run: yarn test
+
+    - name: Upload screenshots
+      uses: actions/upload-artifact@master
+      if: failure()
+      with:
+        name: screenshots
+        path: test/__image_snapshots__/__diff_output__
