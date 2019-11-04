@@ -5261,10 +5261,10 @@ supports-color@^5.3.0:
   dependencies:
     has-flag "^3.0.0"
 
-sweetalert2@^8.0.5:
-  version "8.17.2"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-8.17.2.tgz#f8c5a6a4596e734a19c51cf1f1b1147656238dc5"
-  integrity sha512-9SXqgy0++TSdIcqJTDGsmBtfoBE+ZwuiMUI1TWAFG2/ebwWqMkKTRCY5XN2HhT3opCev/kYkjOqLoNNlXUvKLw==
+sweetalert2@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-9.0.0.tgz#dd6928b830c258a9a46b14dfe4ee7cff1e111a30"
+  integrity sha512-jyyWj7h8j+YAJtJQusjJPOvXEDXxrJUbvZsmG+zXfmTcr8JzkL1519cdklyIgh9uxYz/T1HVLzNjVBpEY52kmA==
 
 symbol-tree@^3.2.2:
   version "3.2.4"
