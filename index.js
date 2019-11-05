@@ -9,7 +9,7 @@ async function sayHi() {
 
   const {value: name} = await Swal.fire({text: 'What is your name?', input: 'text'})
   const {value: location} = await Swal.fire({text: 'Where are you from?', input: 'text'})
-  await Swal.fire(`Hi ${name} from ${location}!`)
+  await Swal.fire(`Hi ${name} from ${location}!`, '', 'success')
 }
 
 sayHi()
