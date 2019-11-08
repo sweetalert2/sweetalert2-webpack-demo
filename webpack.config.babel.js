@@ -1,7 +1,7 @@
 module.exports = {
   entry: {
     // Main app's entry point
-    bundle: `${__dirname}/index.js`
+    bundle: `${__dirname}/index.ts`
   },
   output: {
     filename: 'bundle.js'
@@ -9,10 +9,8 @@ module.exports = {
   module: {
     rules: [
       {
-        // Load imported local javascript
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
       }
     ]
   },
