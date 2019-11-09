@@ -2,6 +2,7 @@
 
 [![Build Status](https://github.com/sweetalert2/sweetalert2-webpack-demo/workflows/build/badge.svg)](https://github.com/sweetalert2/sweetalert2-webpack-demo/actions)
 [![Greenkeeper badge](https://badges.greenkeeper.io/sweetalert2/sweetalert2-webpack-demo.svg)](https://greenkeeper.io/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/06263161-e22d-48b0-a5b8-a90981cea80d/deploy-status)](https://app.netlify.com/sites/sweetalert2-webpack-demo/deploys)
 
 #### index.js:
 ```js
@@ -18,6 +19,3 @@ $ yarn build
 ---
 
 Live result: https://sweetalert2-webpack-demo.netlify.com/
-
-
-PS. Thanks to [Netlify](https://www.netlify.com/) for providing the free hosting for this project!
