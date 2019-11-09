@@ -1,7 +1,7 @@
 module.exports = {
   entry: {
     // Main app's entry point
-    bundle: `${__dirname}/index.ts`
+    bundle: `${__dirname}/index.tsx`
   },
   output: {
     filename: 'bundle.js'
