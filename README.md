@@ -17,8 +17,7 @@ $ yarn build
 
 ---
 
-Live result: https://sweetalert2.github.io/sweetalert2-webpack-demo/
+Live result: https://sweetalert2-webpack-demo.netlify.com/
 
----
 
-Read more about webpack usage: https://github.com/petehunt/webpack-howto
+PS. Thanks to [Netlify](https://www.netlify.com/) for providing the free hosting for this project!
