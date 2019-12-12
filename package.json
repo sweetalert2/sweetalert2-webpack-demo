@@ -1,7 +1,7 @@
 {
   "name": "sweetalert2-webpack-demo",
   "version": "1.0.0",
-  "repository": "https://github.com/limonte/sweetalert2-webpack.git",
+  "repository": "https://github.com/sweetalert2/sweetalert2-webpack.git",
   "description": "Demo of using SweetAlert2 with webpack",
   "author": "Limon Monte <limon.monte@gmail.com> (https://limonte.github.io)",
   "contributors": [
@@ -16,10 +16,6 @@
     "@babel/runtime": "^7.7.2",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.4",
-    "http-server": "^0.11.1",
-    "jest": "^24.0.0",
-    "jest-image-snapshot": "^2.3.0",
-    "puppeteer": "^2.0.0",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.2",
     "webpack": "^4.0.0",
@@ -33,9 +29,6 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "webpack --watch",
-    "serve": "http-server -p 5500",
-    "test": "jest --env=node",
-    "update_screenshots": "jest -u --env=node"
+    "start": "webpack --watch"
   }
 }
