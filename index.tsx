@@ -6,7 +6,7 @@ import withReactContent from 'sweetalert2-react-content'
 const MySwal = withReactContent(Swal)
 
 async function sayHi() {
-  await MySwal.fire(<i>Hi from webpack!</i>, `SweetAlert2 version: ${Swal.version}`)
+  await Swal.fire('Hi from webpack!', `SweetAlert2 version: ${Swal.version}`)
 
   const {value: name} = await MySwal.fire({
     text: 'What is your name?',
