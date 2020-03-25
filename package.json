@@ -24,7 +24,7 @@
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "sweetalert2": "^9.2.0",
+    "sweetalert2": "^9.10.5",
     "sweetalert2-react-content": "^3.0.0"
   },
   "scripts": {
