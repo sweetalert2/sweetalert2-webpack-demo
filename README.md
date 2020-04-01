@@ -17,4 +17,4 @@ $ yarn build
 
 ---
 
-Live result: https://sweetalert2-webpack-demo.netlify.com/
+Live result: https://sweetalert2-webpack-demo.netlify.app/
