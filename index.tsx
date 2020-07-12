@@ -10,7 +10,8 @@ async function sayHi() {
 
   const {value: name} = await MySwal.fire({
     text: 'What is your name?',
-    input: 'text'
+    input: 'text',
+    confirmButtonText: <i>OK</i>
   })
 
   const {value: location} = await MySwal.fire({
