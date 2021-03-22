@@ -2133,10 +2133,10 @@ sweetalert2-react-content@^3.0.0:
   resolved "https://registry.yarnpkg.com/sweetalert2-react-content/-/sweetalert2-react-content-3.3.1.tgz#2e0367bca36a5c0bfcc381a1b5fa90a51b35fff7"
   integrity sha512-wg26qMZdH9a99Rd/6CMH85CKClfYYy6zI41tsN40tsbP4gTHO4zhITbp9y2TTytboFSH2DgKsJzuuEvPikWJtA==
 
-sweetalert2@^10.15.5:
-  version "10.15.5"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-10.15.5.tgz#cca272fdb44c0f3eef3e074ebed4965e9baf118f"
-  integrity sha512-zHZqVpsEyfBVy/O25D7RMYyh+/h0jbmHXGK9DWEDnkPvsl4JlMueJRSEidAFS+mtYDLI8fFkGKltgHRvDPRV1g==
+sweetalert2@^10.15.6:
+  version "10.15.6"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-10.15.6.tgz#8fe309af76543f7d8151a2e57a226f1cceb51a4e"
+  integrity sha512-elLyVvVwBBsgkT0NrxiiVuEv077gqGhm7WEdBjXRHN+TOX+MoC4LpDW2kbdSeJtjjU1sPdqGKfGLoJElIXfVWA==
 
 tapable@^1.0.0:
   version "1.1.3"
@@ -2286,10 +2286,10 @@ webpack-sources@^2.1.1:
     source-list-map "^2.0.1"
     source-map "^0.6.1"
 
-webpack@^5.25.0:
-  version "5.25.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.25.0.tgz#f9409977f0f3b6d4b9c4f73adc7d7cb9603a09e9"
-  integrity sha512-jqQZopNCzt9c4K6Qa7j6kIhzHfR9wgF84go58VoNp4JbZrBr2D2l5lcv72CW80yc6NJl8CR6OY8xctnIs0r2uw==
+webpack@^5.27.1:
+  version "5.27.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.27.1.tgz#6808fb6e45e35290cdb8ae43c7a10884839a3079"
+  integrity sha512-rxIDsPZ3Apl3JcqiemiLmWH+hAq04YeOXqvCxNZOnTp8ZgM9NEPtbu4CaMfMEf9KShnx/Ym8uLGmM6P4XnwCoA==
   dependencies:
     "@types/eslint-scope" "^3.7.0"
     "@types/estree" "^0.0.46"
