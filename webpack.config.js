@@ -4,11 +4,7 @@ module.exports = {
     bundle: `${__dirname}/index.tsx`
   },
   output: {
-    filename: 'bundle.js',
-    environment: {
-      // The environment supports arrow functions ('() => { ... }').
-      arrowFunction: false,
-    }
+    filename: 'bundle.js'
   },
   module: {
     rules: [
