@@ -11,7 +11,7 @@ const ReactSwalWithInput = ReactSwal.mixin({
 })
 
 async function sayHi() {
-  await ReactSwal.fire(<i>Hi from webpack!</i>, `SweetAlert2 version: ${Swal.version}`)
+  await ReactSwal.fire(<i>Hi from webpack! 🙂</i>, `SweetAlert2 version: ${Swal.version}`)
 
   const {value: name} = await ReactSwalWithInput.fire({
     text: 'What is your name?',
