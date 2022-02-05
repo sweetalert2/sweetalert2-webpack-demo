@@ -1,10 +1,13 @@
 module.exports = {
   entry: {
     // Main app's entry point
-    bundle: `${__dirname}/index.tsx`
+    bundle: `${__dirname}/index.tsx`,
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
@@ -16,14 +19,13 @@ module.exports = {
         test: /\.scss$/,
         use: [
           // Creates `style` nodes from JS strings
-          "style-loader",
+          'style-loader',
           // Translates CSS into CommonJS
-          "css-loader",
+          'css-loader',
           // Compiles Sass to CSS
-          "sass-loader",
+          'sass-loader',
         ],
-      }
-    ]
+      },
+    ],
   },
-  mode: 'production'
 }
