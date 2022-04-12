@@ -25,10 +25,20 @@ const swal2Formik = async () => {
         onSubmit={() => {}}
       >
         <Form>
-          <Field type="text" className="swal2-input" name="location" />
+          <Field
+            type="text"
+            className="swal2-input"
+            name="location"
+            onKeyPress={(event: React.KeyboardEvent<HTMLInputElement>) =>
+              event.key === 'Enter' && ReactSwal.clickConfirm()
+            }
+          />
         </Form>
       </Formik>
     ),
+    didOpen: () => {
+      Swal.getPopup().querySelector('input')?.focus()
+    },
     preConfirm: async () => {
       await formikRef.submitForm()
       if (formikRef.isValid) {
