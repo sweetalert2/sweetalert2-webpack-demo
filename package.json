@@ -9,14 +9,14 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.18.2",
-    "@babel/plugin-transform-runtime": "^7.18.2",
-    "@babel/runtime": "^7.18.3",
+    "@babel/core": "^7.18.9",
+    "@babel/plugin-transform-runtime": "^7.18.9",
+    "@babel/runtime": "^7.18.9",
     "@sweetalert2/prettier-config": "^1.0.1",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "css-loader": "^6.7.0",
-    "sass": "^1.53.0",
+    "sass": "^1.54.0",
     "sass-loader": "^13.0.0",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.3.1",
@@ -29,8 +29,8 @@
     "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sweetalert2": "^11.4.18",
-    "sweetalert2-react-content": "^5.0.0"
+    "sweetalert2": "^11.4.24",
+    "sweetalert2-react-content": "^5.0.2"
   },
   "scripts": {
     "build": "webpack --mode=production",
