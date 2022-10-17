@@ -184,10 +184,10 @@
     babel-plugin-polyfill-regenerator "^0.4.1"
     semver "^6.3.0"
 
-"@babel/runtime@^7.19.0":
-  version "7.19.0"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.19.0.tgz#22b11c037b094d27a8a2504ea4dcff00f50e2259"
-  integrity sha512-eR8Lo9hnDS7tqkO7NsV+mKvCmv5boaXFSZ70DnfhcgiEne8hv9oCEd36Klw74EtizEqLsy4YnW8UWwpBVolHZA==
+"@babel/runtime@^7.19.4":
+  version "7.19.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.19.4.tgz#a42f814502ee467d55b38dd1c256f53a7b885c78"
+  integrity sha512-EXpLCrk55f+cYqmHsSR+yD/0gAIMxxA9QK9lnQWzhMCvt+YmoBN7Zx94s++Kv0+unHk39vxNO8t+CMA2WSS3wA==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1301,10 +1301,10 @@ safe-buffer@~5.1.1:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
-sass-loader@^13.0.0:
-  version "13.0.2"
-  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-13.0.2.tgz#e81a909048e06520e9f2ff25113a801065adb3fe"
-  integrity sha512-BbiqbVmbfJaWVeOOAu2o7DhYWtcNmTfvroVgFXa6k2hHheMxNAeDHLNoDy/Q5aoaVlz0LH+MbMktKwm9vN/j8Q==
+sass-loader@^13.1.0:
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-13.1.0.tgz#e5b9acf14199a9bc6eaed7a0b8b23951c2cebf6f"
+  integrity sha512-tZS1RJQ2n2+QNyf3CCAo1H562WjL/5AM6Gi8YcPVVoNxQX8d19mx8E+8fRrMWsyc93ZL6Q8vZDSM0FHVTJaVnQ==
   dependencies:
     klona "^2.0.4"
     neo-async "^2.6.2"
@@ -1426,10 +1426,10 @@ sweetalert2-react-content@^5.0.3:
   resolved "https://registry.yarnpkg.com/sweetalert2-react-content/-/sweetalert2-react-content-5.0.3.tgz#1c7d38d01cbaf7abc7311ef5d77698ed23dc1087"
   integrity sha512-DQXblZn0LHTvmaZquNQncZIE3Ljox85sAKKbXjYlDyFejyOibHwprAVvtQQpAUG3bgvyDUeAOE/BDFcVx6KUow==
 
-sweetalert2@^11.4.33:
-  version "11.4.36"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.4.36.tgz#1a5f1227cf4e99c34fe201b837237840dcfc4a19"
-  integrity sha512-9c9Cj7wn+1ekv2sKcBrgsTbx8malW+11NInepn+0wWeejXFQUeJUxt27ASpo1GdS4CfeHfN9UXBDvU519y0ygw==
+sweetalert2@^11.5.2:
+  version "11.5.2"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.5.2.tgz#d0752eccb466e6cdf072009238580825bb2f64da"
+  integrity sha512-gVS4tSvYxY83RdgL7OQijDRP/othOA/v3JRjiWctGSRYY1NkX6sBirYLtgoRFprQ24HAQdbsWZiFg1k3uLoZZw==
 
 tapable@^2.1.1, tapable@^2.2.0:
   version "2.2.1"
