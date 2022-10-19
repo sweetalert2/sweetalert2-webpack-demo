@@ -1422,9 +1422,9 @@ supports-preserve-symlinks-flag@^1.0.0:
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
 sweetalert2-react-content@^5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/sweetalert2-react-content/-/sweetalert2-react-content-5.0.3.tgz#1c7d38d01cbaf7abc7311ef5d77698ed23dc1087"
-  integrity sha512-DQXblZn0LHTvmaZquNQncZIE3Ljox85sAKKbXjYlDyFejyOibHwprAVvtQQpAUG3bgvyDUeAOE/BDFcVx6KUow==
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/sweetalert2-react-content/-/sweetalert2-react-content-5.0.4.tgz#ede4624dbafdceb64ce4b2737578edba3f3d0c31"
+  integrity sha512-L4N/EKFciNw13Cfv+jSgimF8PUb75QIO8f4TTf1a/kn/G0TCXesWE7c2jfuRZD6pEC1vQ20rJ2csX4gDz3Vn9Q==
 
 sweetalert2@^11.5.2:
   version "11.5.2"
