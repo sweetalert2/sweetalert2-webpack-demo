@@ -2,8 +2,6 @@ name: Build and Deploy
 
 on:
   push:
-    branches:
-      - main
 
 jobs:
   build-and-deploy:
@@ -13,12 +11,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install and Build
-        run: |
-          yarn install
-          yarn build
+      - run: yarn install
+
+      - run: yarn build
 
       - name: Deploy 🚀
+        if: github.ref_name == 'main'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
