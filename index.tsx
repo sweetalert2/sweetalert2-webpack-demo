@@ -1,7 +1,6 @@
 import React from 'react'
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import withReactContent from 'sweetalert2-react-content'
-import swal2Formik from './swal2-formik'
 import './styles.scss'
 
 const ReactSwal = withReactContent(Swal)
@@ -18,7 +17,9 @@ async function sayHi() {
     text: 'What is your name?',
   })
 
-  const location = await swal2Formik()
+  const { value: location } = await ReactSwalWithInput.fire({
+    html: <strong>Where are you from?</strong>,
+  })
 
   await Swal.fire(`Hi ${name} from ${location}!`, '', 'success')
 }
