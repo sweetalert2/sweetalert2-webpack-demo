@@ -15,7 +15,7 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "css-loader": "^7.0.0",
-    "sass": "^1.54.9",
+    "sass": "~1.79.0",
     "sass-loader": "^16.0.0",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.3.1",
