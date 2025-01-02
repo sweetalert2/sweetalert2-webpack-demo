@@ -314,9 +314,9 @@
     "@parcel/watcher-win32-x64" "2.5.0"
 
 "@sweetalert2/theme-dark@^5.0.12":
-  version "5.0.22"
-  resolved "https://registry.yarnpkg.com/@sweetalert2/theme-dark/-/theme-dark-5.0.22.tgz#646261bf25b12f635db729a52e798e52228133d4"
-  integrity sha512-5HieeTfsbdwmH208TtSFT36YcdDsiR6K3KFkVWC6eynoAxGX51UeaikK6HHq5kYWiS8EQCD/2w0nYBjiGEEH3Q==
+  version "5.0.23"
+  resolved "https://registry.yarnpkg.com/@sweetalert2/theme-dark/-/theme-dark-5.0.23.tgz#a59fcf07790e5bd45c57b6dc0b9fa52acc99ad0a"
+  integrity sha512-7aBqYB0qwjC6FJvoUtdFDknVDEO+elG5on2nbyNsjrTnw+kWmgQIw0qoc9oK6lYh2dxqFGk0+30/NVyuCcWjpg==
 
 "@types/eslint-scope@^3.7.7":
   version "3.7.7"
@@ -864,10 +864,10 @@ icss-utils@^5.0.0, icss-utils@^5.1.0:
   resolved "https://registry.yarnpkg.com/icss-utils/-/icss-utils-5.1.0.tgz#c6be6858abd013d768e98366ae47e25d5887b1ae"
   integrity sha512-soFhflCVWLfRNOPU3iv5Z9VUdT44xFRbzjLsEzSr5AQmgqPMTHdU3PMT1Cf1ssx8fLNJDA1juftYl+PUcv3MqA==
 
-immutable@^4.0.0:
-  version "4.3.7"
-  resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.3.7.tgz#c70145fc90d89fb02021e65c84eb0226e4e5a381"
-  integrity sha512-1hqclzwYwjRDFLjcFxOM5AYkkG0rpFPpr1RLPMEuGczoS7YA8gLhy8SWXYRAA/XwfEHpfo3cw5JGioS32fnMRw==
+immutable@^5.0.2:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-5.0.3.tgz#aa037e2313ea7b5d400cd9298fa14e404c933db1"
+  integrity sha512-P8IdPQHq3lA1xVeBRi5VPqUm5HDgKnx0Ru51wZz5mjxHr5n3RWhjIpOFU7ybkUxfB+5IToy+OLaHYDBIWsv+uw==
 
 import-local@^3.0.2:
   version "3.2.0"
@@ -1221,15 +1221,16 @@ sass-loader@^16.0.0:
   dependencies:
     neo-async "^2.6.2"
 
-sass@~1.79.0:
-  version "1.79.6"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.79.6.tgz#35a53c3dbaf66a25f132979f47346521e4ef77cb"
-  integrity sha512-PVVjeeiUGx6Nj4PtEE/ecwu8ltwfPKzHxbbVmmLj4l1FYHhOyfA0scuVF8sVaa+b+VY4z7BVKjKq0cPUQdUU3g==
+sass@^1.83.0:
+  version "1.83.0"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.83.0.tgz#e36842c0b88a94ed336fd16249b878a0541d536f"
+  integrity sha512-qsSxlayzoOjdvXMVLkzF84DJFc2HZEL/rFyGIKbbilYtAvlCxyuzUeff9LawTn4btVnLKg75Z8MMr1lxU1lfGw==
   dependencies:
-    "@parcel/watcher" "^2.4.1"
     chokidar "^4.0.0"
-    immutable "^4.0.0"
+    immutable "^5.0.2"
     source-map-js ">=0.6.2 <2.0.0"
+  optionalDependencies:
+    "@parcel/watcher" "^2.4.1"
 
 scheduler@^0.25.0:
   version "0.25.0"
@@ -1344,9 +1345,9 @@ sweetalert2-react-content@^5.0.3:
   integrity sha512-SBh41SdyHDY9NzwrIG6LACbClCMxIlEFP86tGVr/B4zGD4H2gGXB8o7UAJRc/RtBd/iQL9hIvuCAkrk0AgKEMA==
 
 sweetalert2@^11.5.2:
-  version "11.15.5"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.15.5.tgz#608fa28491b2b874923200732f553c4f69dd4e0f"
-  integrity sha512-bVfmz1M1EZdbSagMSjfrLMzsWD0RKkHBRn73xZBCLzk8lXAJ6gfh63SmRGOzKfUynvg33cjxk5dTnFZozqsEvg==
+  version "11.15.6"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.15.6.tgz#5380ce7a74c9684793a8d3e86b94f4ebb51df348"
+  integrity sha512-OyJQsMlIZPfKHXXPkChQMqoaskPOgF8OnxjShHmyOP8T7KQjrjwXu3qD2pwExrUkVhXFVhoxZovOXG0G+7TCag==
 
 tapable@^2.1.1, tapable@^2.2.0:
   version "2.2.1"
