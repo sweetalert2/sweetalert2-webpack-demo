@@ -8,6 +8,7 @@ const ReactSwal = withReactContent(Swal)
 const ReactSwalWithInput = ReactSwal.mixin({
   input: 'text',
   confirmButtonText: <i>OK</i>,
+  theme: 'dark',
 })
 
 async function sayHi() {
