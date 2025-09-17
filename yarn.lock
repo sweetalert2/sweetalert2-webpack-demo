@@ -1301,9 +1301,9 @@ sweetalert2-react-content@^5.0.3:
   integrity sha512-SBh41SdyHDY9NzwrIG6LACbClCMxIlEFP86tGVr/B4zGD4H2gGXB8o7UAJRc/RtBd/iQL9hIvuCAkrk0AgKEMA==
 
 sweetalert2@^11.5.2:
-  version "11.17.0"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.17.0.tgz#8990bbc791405826fff8f94ad83217c5e39c358d"
-  integrity sha512-w76/rXt6PsOhF+fOITf7J/ycwOtBqNM64LKeKGwDFuCRrX7T6mk5vcUYImshJKmK3886JpZEk2ladm8jKvEH9Q==
+  version "11.23.0"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.23.0.tgz#ba8a051b1e94215c762af08692171b7b4611c4c1"
+  integrity sha512-cKzzbC3C1sIs7o9XAMw4E8F9kBtGXsBDUsd2JZ8JM/dqa+nzWwSGM+9LLYILZWzWHzX9W+HJNHyBlbHPVS/krw==
 
 tapable@^2.1.1, tapable@^2.2.0:
   version "2.2.1"
