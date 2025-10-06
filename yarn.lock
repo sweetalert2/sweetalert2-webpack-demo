@@ -349,9 +349,9 @@
   integrity sha512-qXRuZaOsAdXKFyOhRBg6Lqqc0yay13vN7KrIg4L7N4aaHN68ma9OK3NE1BoDFgFOTfM7zg+3/8+2n8rLUH3OKQ==
 
 "@types/react@^19.0.0":
-  version "19.1.13"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-19.1.13.tgz#fc650ffa680d739a25a530f5d7ebe00cdd771883"
-  integrity sha512-hHkbU/eoO3EG5/MZkuFSKmYqPbSVk5byPFa3e7y/8TybHiLMACgI8seVYlicwk7H5K/rI2px9xrQp/C+AUDTiQ==
+  version "19.1.15"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-19.1.15.tgz#cf854cdf6624f79e34633ddf6dc1e104be459908"
+  integrity sha512-+kLxJpaJzXybyDyFXYADyP1cznTO8HSuBpenGlnKOAkH4hyNINiywvXS/tGJhsrGGP/gM185RA3xpjY0Yg4erA==
   dependencies:
     csstype "^3.0.2"
 
@@ -1185,9 +1185,9 @@ sass-loader@^16.0.0:
     neo-async "^2.6.2"
 
 sass@^1.83.0:
-  version "1.93.1"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.93.1.tgz#94bf77eeef5fba022c7316515327e275e46b654e"
-  integrity sha512-wLAeLB7IksO2u+cCfhHqcy7/2ZUMPp/X2oV6+LjmweTqgjhOKrkaE/Q1wljxtco5EcOcupZ4c981X0gpk5Tiag==
+  version "1.93.2"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.93.2.tgz#e97d225d60f59a3b3dbb6d2ae3c1b955fd1f2cd1"
+  integrity sha512-t+YPtOQHpGW1QWsh1CHQ5cPIr9lbbGZLZnbihP/D/qZj/yuV68m8qarcV17nvkOX81BCrvzAlq2klCQFZghyTg==
   dependencies:
     chokidar "^4.0.0"
     immutable "^5.0.2"
