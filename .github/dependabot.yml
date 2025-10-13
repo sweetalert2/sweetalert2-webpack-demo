@@ -9,7 +9,7 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
-    # group minor and patch deps
+    # group all deps
     groups:
       dependencies:
         update-types:
